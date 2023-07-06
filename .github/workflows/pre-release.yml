@@ -50,6 +50,6 @@ jobs:
 
       - name: 'Automatically mirror release artifacts'
         env:
-          GITHUB_SUPER_TOKEN: ${{ secrets.GITHUB_SUPER_TOKEN }}
+          GITHUB_SUPER_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         run: |
           ./scripts/mirror-actions.sh "$AUTOMATIC_RELEASES_TAG"
