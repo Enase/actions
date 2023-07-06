@@ -14,7 +14,9 @@ jobs:
     uses: ./.github/workflows/tests.yml
 
   gh_pre_release:
+    name: '🔨 Create Pre-release'
     runs-on: 'ubuntu-latest'
+    permissions: write-all
     needs: [test]
     env:
       JEST_VERBOSE: ${{ secrets.JEST_VERBOSE }}

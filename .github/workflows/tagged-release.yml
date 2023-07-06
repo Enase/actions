@@ -12,7 +12,9 @@ jobs:
     uses: ./.github/workflows/tests.yml
 
   gh_tagged_release:
+    name: '🔨 Create Release'
     runs-on: 'ubuntu-latest'
+    permissions: write-all
     needs: [test]
     env:
       JEST_VERBOSE: ${{ secrets.JEST_VERBOSE }}
