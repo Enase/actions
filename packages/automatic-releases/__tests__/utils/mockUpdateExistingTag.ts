@@ -68,7 +68,7 @@ export const setupEnv = {
   GITHUB_EVENT_NAME: 'push',
   GITHUB_SHA: testGhSHA,
   GITHUB_REF: 'refs/heads/automatic-pre-releaser',
-  GITHUB_WORKFLOW: 'keybase',
+  GITHUB_WORKFLOW: 'test-workflow',
   GITHUB_ACTION: 'self',
   GITHUB_ACTOR: 'Enase',
   GITHUB_EVENT_PATH: path.join(__dirname, '../payloads', 'git-push.json'),

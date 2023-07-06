@@ -1,15 +1,15 @@
 {
   "name": "github-actions",
   "version": "0.0.0",
-  "author": "Marvin Pinto",
+  "author": "Sergii Kovalov",
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "packages/!(aws-ssm-secrets|keybase-notifications)"
+    "packages/*"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/marvinpinto/actions"
+    "url": "https://github.com/Enase/actions"
   },
   "scripts": {
     "test": "yarn jest --env=node --colors --verbose true",

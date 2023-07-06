@@ -1,11 +1,7 @@
 module.exports = {
   extends: ['@commitlint/config-conventional'],
   rules: {
-    'scope-enum': [
-      2,
-      'always',
-      ['deps', 'deps-dev', 'automatic-releases', 'keybase-notifications', 'automatic-releases'],
-    ],
+    'scope-enum': [2, 'always', ['deps', 'deps-dev', 'automatic-releases', 'keybase-notifications', 'global']],
     'footer-max-line-length': [0, 'never'],
     'body-max-line-length': [0, 'never'],
   },
