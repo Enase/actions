@@ -290,12 +290,10 @@ export const main = async (): Promise<void> => {
       );
     }
 
-    const previousReleaseTag = args.automaticReleaseTag
-      ? args.automaticReleaseTag
-      : await searchForPreviousReleaseTag(client, releaseTag, {
-          owner: context.repo.owner,
-          repo: context.repo.repo,
-        });
+    const previousReleaseTag = await searchForPreviousReleaseTag(client, releaseTag, {
+      owner: context.repo.owner,
+      repo: context.repo.repo,
+    });
     core.endGroup();
 
     const commitsSinceRelease = await getCommitsSinceRelease(
