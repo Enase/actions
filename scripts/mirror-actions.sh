@@ -15,7 +15,7 @@ fi
 ACTION_AUTOMATIC_RELEASES_REPO="action-automatic-releases"
 GITHUB_LOGIN="Enase"
 TAG=$1
-RELEASE_BODY="Details available at [${GITHUB_LOGIN}/actions@${TAG}](https://github.com/${GITHUB_LOGIN}/actions/releases/tags/${TAG})."
+RELEASE_BODY="Details available at [${GITHUB_LOGIN}/actions@${TAG}](https://github.com/${GITHUB_LOGIN}/actions/releases/tag/${TAG})."
 
 PRERELEASE="false"
 if [[ "$TAG" == "latest" ]]; then
