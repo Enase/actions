@@ -26,7 +26,7 @@
     "@octokit/rest": "18.12.0",
     "conventional-changelog-angular": "^6.0.0",
     "conventional-commits-parser": "^4.0.0",
-    "globby": "^11.1.0",
+    "globby": "^13.2.2",
     "md5-file": "^5.0.0",
     "semver": "^7.5.3"
   },
