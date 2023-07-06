@@ -46,7 +46,7 @@
     "ts-loader": "^9.4.4",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4",
-    "prettier": "^2.8.8",
+    "prettier": "^3.0.0",
     "which": "^3.0.1"
   }
 }
