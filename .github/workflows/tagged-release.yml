@@ -36,7 +36,7 @@ jobs:
       - run: 'yarn install --frozen-lockfile'
       - run: 'yarn build'
 
-      - uses: 'marvinpinto/action-automatic-releases@latest'
+      - uses: 'Enase/action-automatic-releases@latest'
         id: 'automatic_releases'
         with:
           repo_token: '${{ secrets.GITHUB_TOKEN }}'
